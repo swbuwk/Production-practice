@@ -2,6 +2,7 @@
 let header=document.querySelector("header")
 let navbar=document.querySelector(".navbar")
 let client_height=document.documentElement.clientHeight
+let exp_list=document.querySelector(".expanded_list")
 
 console.log(header)
 
@@ -9,11 +10,13 @@ document.body.onwheel=function(event){
     console.log(window.scrollY)
     console.log(document.documentElement.clientHeight)
 
-    if(window.scrollY>=client_height*0.9){
+    if(window.scrollY>0){
         navbar.style.backgroundColor="rgba(54, 53, 49,1)"
+        exp_list.style.backgroundColor="rgba(54, 53, 49,1)"
     }
     else{
-        navbar.style.backgroundColor="rgba(54,53,49,0.6)"
+        navbar.style.backgroundColor="rgba(54,53,49,0.5)"
+        exp_list.style.backgroundColor="rgba(54,53,49,0.5)"
     }
     if(event.deltaY>0 && window.scrollY>100){
         navbar.style.top="-63px"
@@ -43,7 +46,7 @@ achievments_btn.onclick = () => {
   history.style.opacity = '0';
   achievments.style.opacity = '1';
   achievments_btn.style.color = '#40a4dd'
-  history_btn.style.color = '#fff'
+  history_btn.style.color = '#000'
 }
 
 history_btn.onclick = () => {
@@ -51,7 +54,7 @@ history_btn.onclick = () => {
   achievments.style.zIndex = '0'
   achievments.style.opacity = '0';
   history.style.opacity = '1';
-  achievments_btn.style.color = '#fff'
+  achievments_btn.style.color = '#000'
   history_btn.style.color = '#40a4dd'
 }
 
