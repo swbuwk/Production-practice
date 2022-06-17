@@ -1,20 +1,38 @@
 /* размеры подгоняйте по мере появления элементов, цвет пока только для наглядности некоторых элементов */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+* {
+    font-family: "Raleway";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     width:100vw;
     height:500vh;
     margin:0px;
-    display: flex;
     background-color: rgb(213, 75, 75);
+    overflow-x: hidden;
 }
 
+body::-webkit-scrollbar {
+    width: 5px;
+    background-color: #fff;
+}
+
+body::-webkit-scrollbar-thumb {
+    width: 5px;
+    background-color: rgb(0, 142, 190);
+}
 
 header{
     display: flex;
     /* align-items: center; */
     /* justify-content: center; */
-    width:100vw;
+    max-width: 100vw;
+    width:100%;
     height:100vh;
-    margin:0px;
 }
 
 /* фон хэдера */
@@ -70,7 +88,7 @@ header img{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 100%;
+    width:100%;
     height: 63px;
     position: fixed;
     background-color: rgb(54, 53, 49);
@@ -78,7 +96,6 @@ header img{
 
 .title{
     color: rgb(20, 107, 183);
-    font-family: "Poppins", sans-serif;
     letter-spacing: 3px;
     cursor: default;
 }
@@ -101,7 +118,6 @@ header img{
     cursor: default;
     height: 100%;
     height: 100%;
-    font-family: "Poppins", sans-serif;
     font-weight: 580;
 }
 
@@ -176,7 +192,6 @@ header img{
     height:40vh;
     background-color: transparent;
 
-    font-family: "open-sans", sans-serif;
     font-weight: 580;
     font-size:125%;
     color: wheat;
