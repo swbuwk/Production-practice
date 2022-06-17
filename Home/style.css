@@ -105,8 +105,9 @@ header img{
 
 
 .title{
-  color: rgb(20, 107, 183);
+  color: var(--blue);
   /* font-family: "Poppins", sans-serif; */
+  font-size: 30px;
   letter-spacing: 3px;
   cursor: default;
 }
@@ -130,7 +131,7 @@ header img{
   cursor: default;
   /* font-family: monospace; */
 
-  font-size: 160%;
+  font-size: 18px;
 }
 
 /* позиционирование для выпадающих списков */
@@ -141,7 +142,7 @@ header img{
 /* выпадающий из навбара список */
 .options_expanding:hover .expanded_list{
   opacity: 1;
-  height: 150px;
+  height: 200px;
 }
 .options_expanding:hover .expanded_list div{
   height: 50px;
@@ -163,7 +164,7 @@ header img{
 
 /* стиль элементов выпадающего списка */
 .expanded_list div{
-  width:90%;
+  width:100%;
   height:0px;
   color: ivory;
   display: flex;
@@ -172,7 +173,7 @@ header img{
   white-space: nowrap;
   /* border-bottom: 2px solid ivory; */
   transition-duration: 250ms;
-  margin: 0 16.7px;
+  margin: 0 20px;
 }
 
 /* убираем разделитель в конце выпадающего списка */
@@ -183,6 +184,8 @@ header img{
 /* реакция текста в выпадающем списке на мышь */
 .expanded_list div:hover{
   color:rgb(20, 107, 183);
+  background-color: rgba(44, 44, 39, 0.97);
+
 }
 
 /* позиционирование текста в навбаре */
@@ -276,7 +279,6 @@ width: 100%;
   display: flex;
   /* align-items: center ; */
   flex-direction: column;
-  justify-content: center;
   /* border: black solid 2px; */
   /* border-radius: 5px; */
   background-color: whitesmoke;
@@ -295,7 +297,7 @@ width: 100%;
   font-weight: bold;
   font-size:210%;
   color: black;
-  margin-top: 4%;
+  margin-top: 10%;
   margin-left: 10%;
 }
 
@@ -346,7 +348,7 @@ width: 100%;
   
   .about__title {
     font-weight: 700;
-    font-size: 41px;
+    font-size: 50px;
     margin-right: 95px;
   }
   
@@ -467,10 +469,12 @@ width: 100%;
   }
 
   .webinars h1 {
-    font-size: 60px;
+    position: absolute;
+    font-size: 50px;
     margin: 30px 0;
     font-weight: 800;
-    color: var(--blue);
+    color: #fff;
+    z-index: 5;
   }
 
   .webinars-scroll {
@@ -508,14 +512,14 @@ width: 100%;
     display: flex;
     flex-direction: column;
     color:  white;
-    width: 60%;
-    height: 70%;
+    width: 50%;
+    height: 60%;
     margin-left: 10%;
     z-index: 3;
   }
 
   .webinar-title {
-    font-size: 60px;
+    font-size: 55px;
     font-weight: 300;
 
   }

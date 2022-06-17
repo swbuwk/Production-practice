@@ -7,10 +7,8 @@ let exp_list=document.querySelector(".expanded_list")
 console.log(header)
 
 document.body.onwheel=function(event){
-    console.log(window.scrollY)
-    console.log(document.documentElement.clientHeight)
 
-    if(window.scrollY>0){
+    if(window.scrollY>30){
         navbar.style.backgroundColor="rgba(54, 53, 49,1)"
         exp_list.style.backgroundColor="rgba(54, 53, 49,1)"
     }
