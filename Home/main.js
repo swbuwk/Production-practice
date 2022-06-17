@@ -1,3 +1,29 @@
+//NAVBAR Scroll
+let header=document.querySelector("header")
+let navbar=document.querySelector(".navbar")
+let client_height=document.documentElement.clientHeight
+
+console.log(header)
+
+document.body.onwheel=function(event){
+    console.log(window.scrollY)
+    console.log(document.documentElement.clientHeight)
+
+    if(window.scrollY>=client_height*0.9){
+        navbar.style.backgroundColor="rgba(54, 53, 49,1)"
+    }
+    else{
+        navbar.style.backgroundColor="rgba(54,53,49,0.6)"
+    }
+    if(event.deltaY>0 && window.scrollY>100){
+        navbar.style.top="-63px"
+    }
+    else{
+        navbar.style.top="0"
+    }
+    console.log(event)
+}
+
 
 // BTN About us
 let history = document.querySelector('#history')
