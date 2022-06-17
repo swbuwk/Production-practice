@@ -1,6 +1,12 @@
 /* размеры подгоняйте по мере появления элементов, цвет пока только для наглядности некоторых элементов */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 
+:root {
+  --dark-blue: #1d465d;
+  --blue: #40a4dd;
+  --gray: #ededed;
+}
+
 * {
     font-family: "Raleway";
     margin: 0;
@@ -12,7 +18,6 @@ body{
     width:100%;
     height:500vh;
     margin:0px;
-    background-color: rgb(213, 75, 75);
     overflow-x: hidden;
 }
 
@@ -40,7 +45,7 @@ header img{
     width:100%;
     height:100%;
     z-index: -1;
-    filter: brightness(0.5);
+    filter: brightness(0.3);
     position: absolute;
     margin: 0;
 }
@@ -355,4 +360,104 @@ header img{
     background: #1d465d;
     color: #fff;
     border: none;
+  }
+
+  .webinars {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .webinar-list {
+    position: relative;
+    display: flex;
+    width: 100%;
+    left: 0px;
+    transition: 0.5s ease-in-out;
+  }
+
+  .webinars h1 {
+    font-size: 60px;
+    margin: 30px 0;
+    font-weight: 800;
+    color: var(--blue);
+  }
+
+  .webinars-scroll {
+    position: absolute;
+    top: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 30px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+    z-index: 5;
+  }
+
+  .webinar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-width: 100%;
+    height: 900px;
+  }
+
+  .webinar-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.2);
+  }
+
+  .webinar-content {
+    display: flex;
+    flex-direction: column;
+    color:  white;
+    width: 60%;
+    height: 70%;
+    margin-left: 10%;
+    z-index: 3;
+  }
+
+  .webinar-title {
+    font-size: 60px;
+    font-weight: 300;
+
+  }
+
+  .webinar-date {
+    font-size: 30px;
+    font-weight: 100;
+
+  }
+
+  .webinar-desc {
+    margin-top: 60px;
+    font-size: 25px;
+    font-weight: 200;
+
+  }
+
+  .webinar-underline {
+    height: 3px;
+    width: 300px;
+    margin: 40px 0;
+    background-color: white;
+  }
+
+  .webinar-link {
+    font-size: 40px;
+    font-weight: 800;
+    color: var(--blue);
+    text-decoration: none;
+  }
+
+  .webinar-link:visited {
+    color: var(--blue);
   }

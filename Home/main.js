@@ -28,3 +28,35 @@ history_btn.onclick = () => {
   achievments_btn.style.color = '#fff'
   history_btn.style.color = '#40a4dd'
 }
+
+// WEBINARS scroll
+const webinars = document.querySelector(".webinar-list")
+const webinarsCount = webinars.childElementCount
+let webinarsLeft = 0
+
+
+const scroll_left = document.querySelector("#scroll-left")
+const scroll_right = document.querySelector("#scroll-right")
+
+scroll_right.onclick = () => {
+  if (webinarsLeft>-webinarsCount+1) {
+    webinarsLeft--
+  } else {
+    webinarsLeft=0
+  }
+
+  webinars.style.left = `${webinarsLeft*100}%`
+
+
+}
+
+scroll_left.onclick = () => {
+  if (webinarsLeft<0) {
+    webinarsLeft++
+  } else {
+    webinarsLeft=-webinarsCount+1
+  }
+
+  webinars.style.left = `${webinarsLeft*100}%`
+}
+
