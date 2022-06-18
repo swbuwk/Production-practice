@@ -462,7 +462,6 @@ width: 100%;
   height: 400px;
   background: #1d465d;
   text-align: center;
-  color: #40a4dd;
   margin: 0 1%;
   padding-bottom: 50px;
   cursor: pointer;
@@ -470,6 +469,8 @@ width: 100%;
 }
 
 .solutions__card {
+  color: #40a4dd;
+  text-decoration: none;
   width: 100%;
   max-width: 85%;
   margin: 0 auto;
