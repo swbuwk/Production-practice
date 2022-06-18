@@ -26,34 +26,35 @@ document.body.onwheel=function(event){
 }
 
 
-// BTN About us
-let history = document.querySelector('#history')
-let achievments = document.querySelector('#achievments')
-
-let achievments_btn = document.querySelector('#achievments-btn')
+// SECTION ABOUT US
 let history_btn = document.querySelector('#history-btn')
+let achievements_btn = document.querySelector('#achievements-btn')
+let history = document.querySelector('#history')
+let achievements = document.querySelector('#achievements')
 
-
+achievements.style.display = 'none'
 history_btn.style.color = '#40a4dd'
-achievments.style.zIndex = '0'
-history.style.zIndex = '1'
-
-achievments_btn.onclick = () => {
-  history.style.zIndex = '0'
-  achievments.style.zIndex = '1'
-  history.style.opacity = '0';
-  achievments.style.opacity = '1';
-  achievments_btn.style.color = '#40a4dd'
-  history_btn.style.color = '#000'
-}
 
 history_btn.onclick = () => {
-  history.style.zIndex = '1'
-  achievments.style.zIndex = '0'
-  achievments.style.opacity = '0';
-  history.style.opacity = '1';
-  achievments_btn.style.color = '#000'
+  achievements.style.opacity = '0';
+  history.style.opacity = '1'
   history_btn.style.color = '#40a4dd'
+  achievements_btn.style.color = '#000'
+  setTimeout (() => {
+    achievements.style.display = 'none';
+    history.style.display = 'flex';
+  },200)
+}
+
+achievements_btn.onclick = () => {
+  achievements.style.opacity = '1';
+  history.style.opacity = '0';
+  history_btn.style.color = '#000'
+  achievements_btn.style.color = '#40a4dd'
+  setTimeout (() => {
+    history.style.display = 'none';
+  achievements.style.display = 'flex';
+  },200)
 }
 
 // WEBINARS scroll
