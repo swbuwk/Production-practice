@@ -10,11 +10,11 @@ document.body.onwheel=function(event){
 
     if(window.scrollY>30){
         navbar.style.backgroundColor="rgba(54, 53, 49,1)"
-        exp_list.style.backgroundColor="rgba(54, 53, 49,1)"
+        // exp_list.style.backgroundColor="rgba(54, 53, 49,1)"
     }
     else{
         navbar.style.backgroundColor="rgba(54,53,49,0.5)"
-        exp_list.style.backgroundColor="rgba(54,53,49,0.5)"
+        // exp_list.style.backgroundColor="rgba(54,53,49,0.5)"
     }
     if(event.deltaY>0 && window.scrollY>100){
         navbar.style.top="-63px"

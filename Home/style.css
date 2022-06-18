@@ -109,7 +109,7 @@ header img{
   /* font-family: "Poppins", sans-serif; */
   font-size: 30px;
   letter-spacing: 3px;
-  cursor: default;
+  cursor: pointer;
 }
 
 /* ссылки на другие части сайта */
@@ -128,7 +128,7 @@ header img{
   color: whitesmoke;
   margin-right: 15px;
   transition-duration: 200ms;
-  cursor: default;
+  cursor: pointer;
   /* font-family: monospace; */
 
   font-size: 18px;
@@ -242,7 +242,7 @@ header img{
   align-items: center;
 
   transition-duration: 150ms;
-  cursor: default;
+  cursor: pointer;
 
   /* font-family: monospace; */
   font-weight: 580;
@@ -274,13 +274,9 @@ width: 100%;
   width: 15vw;
   height:20vh;
 
-  /* opacity: 0.4; */
-
   display: flex;
-  /* align-items: center ; */
   flex-direction: column;
-  /* border: black solid 2px; */
-  /* border-radius: 5px; */
+
   background-color: whitesmoke;
   transition-duration: 250ms;
 }
@@ -292,22 +288,31 @@ width: 100%;
   opacity:1;
 }
 
+.header_info_blocks div:hover h2{
+  margin-top: 5%;
+}
+
 .header_info_blocks div h1{
-  /* font-family: monospace; */
   font-weight: bold;
   font-size:210%;
   color: black;
-  margin-top: 10%;
+  margin-top: 5%;
   margin-left: 10%;
+
+  cursor:default;
 }
 
 .header_info_blocks div h2{
   /* font-family: monospace; */
   font-weight: bold;
-  font-size:150%;
+  font-size:130%;
   color: black;
-  margin-top: 4%;
+  margin-top: 2%;
   margin-left: 10%;
+
+  transition-duration: 250ms;
+
+  cursor:default;
 }
 
 /* 
