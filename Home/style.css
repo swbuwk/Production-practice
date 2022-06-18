@@ -324,7 +324,7 @@ width: 100%;
 /* SECTION ABOUT US */
 
 .about-us {
-  padding-bottom: 75px;
+  padding-bottom: 25px;
 }
 
 .about__container {
@@ -337,7 +337,7 @@ width: 100%;
   display: flex;
   justify-content: flex-start;
   color: #1d465d;
-  padding: 25px 0;
+  padding-bottom: 25px;
 }
 
 .about__title {
@@ -350,16 +350,13 @@ width: 100%;
   align-items: center;
   list-style: none;
   padding: 0;
-
   margin-left: 90px;
 }
 
 .about__menu__elem {
   font-size: 19px;
   font-weight: 500;
-
   margin-right: 50px;
-
   transition: .2s;
   cursor: pointer;
 }
@@ -371,13 +368,13 @@ width: 100%;
 .about__card__inner {
   width: 100%;
   max-width: 100%;
-  background: #1d465d;
   height: 600px;
+
+  background: #1d465d;
 }
 
 .about__card {
   display: flex;
-
   transition: .5s;
 }
 
@@ -388,10 +385,9 @@ width: 100%;
 .about__card__info {
   display: flex;
   flex-direction: column;
+  width: 35.7%;
   color:#fff;
   background: #1d465d ;
-  width: 35.7%;
-
   padding: 50px;
 }
 
@@ -406,18 +402,14 @@ width: 100%;
 
 .about__btn {
   width: 175px;
-
   color: #fff;
   text-decoration: none;
   text-align: center;
   font-weight: 500;
-
   border: 2px #fff solid;
   border-radius: 25px;
-  
   padding: 10px 15px;
   margin: 20px auto 0;
-
   transition: .2s;
 }
 
@@ -425,6 +417,81 @@ width: 100%;
   background: #fff;
   color: #1d465d;
   border: none;
+}
+
+/* SECTION SOLUTIONS */
+
+.solutions {
+  height: 75vh;
+  background: #fff;
+}
+
+.solutions__container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.solutions__title__inner {
+  padding: 25px 0 40px;
+}
+
+.solutions__title {
+  font-size: 41px;
+  color: #1d465d;
+}
+
+.solutions__card__all__inner {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 100%;
+  height: 470px;
+}
+
+.solutions__card__inner {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 23%;
+  height: 400px;
+  background: #1d465d;
+  text-align: center;
+  color: #40a4dd;
+  margin: 0 1%;
+  padding-bottom: 50px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.solutions__card {
+  width: 100%;
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+.solutions__img {
+  width: 100px;
+  margin: 65px 0 30px;
+}
+
+.solutions__card__title {
+  font-size: 25px;
+  margin: 15px 0;
+}
+
+.solutions__card__subtitle {
+  font-size: 14px;
+  margin: 40px 0 25px;
+}
+
+.solutions__subtitle__inner {
+  width: 100%;
+  max-width: 1000px;
+  font-size: 14px;
+  color: #b3b3b3;
+  text-align: center;
+  margin: 0 auto;
 }
 
 /* WEBINARS */

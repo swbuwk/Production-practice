@@ -57,6 +57,22 @@ achievements_btn.onclick = () => {
   },200)
 }
 
+// SECTION SOLUTIONS 
+
+$(document).ready(function () {
+
+  $('.solutions__card__inner').mouseleave(function () { 
+    this.style.marginTop = ''
+    this.style.boxShadow = ''
+  });
+
+  $('.solutions__card__inner').mouseenter(function () { 
+    this.style.marginTop = '20px'
+    this.style.boxShadow = '0px 0px 40px 0px #40a4dd'
+    console.log(this)
+  });
+});
+
 // WEBINARS scroll
 const webinars = document.querySelector(".webinar-list")
 const webinarsCount = webinars.childElementCount
