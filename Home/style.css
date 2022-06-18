@@ -427,7 +427,6 @@ width: 100%;
 /* SECTION SOLUTIONS */
 
 .solutions {
-  height: 75vh;
   background: #fff;
 }
 
@@ -456,7 +455,7 @@ width: 100%;
 
 .solutions__card__inner {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
   max-width: 23%;
   height: 400px;
@@ -469,7 +468,7 @@ width: 100%;
 }
 
 .solutions__card {
-  color: #40a4dd;
+  color: #40a4dd; /*#00c2d2*/
   text-decoration: none;
   width: 100%;
   max-width: 85%;
@@ -497,7 +496,7 @@ width: 100%;
   font-size: 14px;
   color: #b3b3b3;
   text-align: center;
-  margin: 0 auto;
+  margin: 0 auto 60px;
 }
 
 /* WEBINARS */

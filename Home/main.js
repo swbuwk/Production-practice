@@ -69,7 +69,6 @@ $(document).ready(function () {
   $('.solutions__card__inner').mouseenter(function () { 
     this.style.marginTop = '20px'
     this.style.boxShadow = '0px 0px 40px 0px #40a4dd'
-    console.log(this)
   });
 });
 
