@@ -8,7 +8,7 @@ console.log(header)
 
 document.body.onwheel=function(event){
 
-    if(window.scrollY>30){
+    if(window.scrollY>50){
         navbar.style.backgroundColor="rgba(54, 53, 49,1)"
         // exp_list.style.backgroundColor="rgba(54, 53, 49,1)"
     }
@@ -19,7 +19,7 @@ document.body.onwheel=function(event){
     if(event.deltaY>0 && window.scrollY>100){
         navbar.style.top="-63px"
     }
-    else{
+    else {
         navbar.style.top="0"
     }
     console.log(event)
