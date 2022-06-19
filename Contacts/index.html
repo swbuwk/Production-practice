@@ -1,13 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Контакты</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
 </head>
 <body>
-    
+  <header>
+
+  </header>
+  <main>
+    <section class="contact">
+      <div class="contact__container">
+        <div class="contact__inner">
+          <h1 class="contact__title">Наши контакты</h1>
+          <div class="contact__info__inner">
+            <div class="contact__info">
+              <div class="contact__content">
+                <div class="btn-switch__inner">
+                  <h3 class="btn-switch" id="btn-call">Закажите звонок</h3>
+                  <h3 class="btn-switch" id="btn-message">Напишите нам</h3>
+                </div>
+                <form action="" class="form" id="call">
+                  <h3 class="title__input">Название организации*</h3>
+                  <input type="text" required class="input__form" placeholder="Организация">
+                  <h3 class="title__input">Как к вам можно обращаться?*</h3>
+                  <input type="text" required class="input__form" placeholder="Ваше имя">
+                  <h3 class="title__input">Интересующий вас вопрос?*</h3>
+                  <input type="text" required class="input__form" placeholder="Ваш вопрос">
+                  <h3 class="title__input">Ваш контактный телефон*</h3>
+                  <input type="tel" required class="input__form" id="input-phone">
+                  <input type="submit" value="Заказать звонок" class="btn-submit">
+                </form>
+                <form action="" class="form" id="message">
+                  <h3 class="title__input">Ваше имя*</h3>
+                  <input type="text" required class="input__form" placeholder="Имя">
+                  <h3 class="title__input">Ваш Email*</h3>
+                  <input type="email" required class="input__form" placeholder="Email">
+                  <h3 class="title__input">Ваш контактный телефон*</h3>
+                  <input type="tel" required class="input__form" id="input-phone">
+                  <h3 class="title__input">Тема*</h3>
+                  <input type="text" required class="input__form" placeholder="Тема сообщения">
+                  <h3 class="title__input">Сообщение*</h3>
+                  <textarea name="message-content" cols="30" rows="5" class="message__content" required></textarea>
+                  <input type="submit" value="Отправить сообщение" class="btn-submit">
+                </form>
+              </div>
+          </div>
+          <div class="map" id="map"></div>
+        </div>
+        <h1 class="tel__company">Телефон компании: +7(812)670—89—63</h1>
+      </div>
+    </section>
+  </main>
+  <!-- <div id="map" style="width: 600px; height: 600px;"></div> -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=2b168aeb-da37-4bd9-962a-37c402837b86&lang=ru_RU" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/imask/6.4.2/imask.min.js" integrity="sha512-l0grYOI8XZga5TajPOiqLrQVCKrdh+k0QSEtS+cpJlNeI8Nu9GOhsVaFyFQuPQfYp02GnhsyHqkPR7P7BTKYAQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="main.js"></script>
 </body>
 </html>
