@@ -1,0 +1,9 @@
+@media (min-width: 1200px) {
+  .contact__container {
+    max-width: 85%;
+  }
+
+  .title__company, .tel__company {
+    font-size: 30px;
+  }
+}
