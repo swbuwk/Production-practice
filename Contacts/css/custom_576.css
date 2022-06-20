@@ -1,0 +1,31 @@
+@media (min-width: 576px) {
+  .contact__container {
+    max-width: 90%;
+  }
+
+  .btn-switch__inner {
+    max-width: 100%;
+    flex-direction: row;
+  }
+
+  .btn-switch {
+    width: 30%;
+    margin: 10px 15px;
+  }
+
+  .title__input {
+    font-size: 16px;
+  }
+
+  .btn-submit {
+    max-width: 50%;
+  }
+
+  .map {
+    height: 500px;
+  }
+
+  .tel__company, .title__company {
+    font-size: 25px;
+  }
+}

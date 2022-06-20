@@ -1,0 +1,42 @@
+@media (min-width: 992px) {
+  .contact__container {
+    max-width: 90%;
+  }
+
+  .contact__title {
+    text-align: left;
+  }
+
+  .contact__info__inner {
+    flex-direction: row;
+    height: 900px;
+  }
+
+  .contact__info {
+    justify-content: flex-start;
+    max-width: 35%;
+    margin: 50px auto;
+  }
+
+  .btn-switch__inner {
+    flex-direction: column
+  }
+
+  .btn-switch {
+    width: 50%;
+  }
+
+  .btn-submit {
+    max-width: 75%;
+}
+
+  .map {
+    width: 65%;
+    height: 850px;
+    margin-top: 50px;
+  }
+
+  .title__company {
+    margin-top: 70px;
+  }
+}
