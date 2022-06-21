@@ -111,7 +111,6 @@ header img{
 
 .title{
   color: var(--blue);
-  /* font-family: "Poppins", sans-serif; */
   font-size: 30px;
   letter-spacing: 3px;
   cursor: pointer;
@@ -130,39 +129,39 @@ header img{
   height: 100%;
   flex-direction: column;
   justify-content: center;
+  background-color: transparent;
   color: whitesmoke;
-  margin-right: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
   transition-duration: 200ms;
   cursor: pointer;
-  /* font-family: monospace; */
-
   font-size: 18px;
+}
+
+.options_list li:hover{
+  background-color: rgba(54,53,49,0.97);
 }
 
 /* позиционирование для выпадающих списков */
 .expanded_start{
   position: relative;
+  margin-left:-10px
 }
 
 /* выпадающий из навбара список */
 .options_expanding:hover .expanded_list{
-  opacity: 1;
-  height:fit-content;
-  width:fit-content;
-
+  height: fit-content;
+  opacity:1;
 }
-.options_expanding:hover .expanded_list div{
-  height: 50px;
-  width:100%;
-  opacity: 1;
+.options_expanding:hover .navbar_link{
+  display: flex;
 }
 
 /* выпадающий список для пунктов навбара */
 .expanded_list{
-  display:flex;
   height: 0;
+  display:flex;
   flex-direction: column;
-  align-items: center;
   position: absolute;
   width:fit-content;
   background-color: rgba(54,53,49,0.97);
@@ -174,25 +173,22 @@ header img{
 
 
 /* стиль элементов выпадающего списка */
-.expanded_list div{
-  width:0;
-  height:0px;
+.navbar_link{
+  height:50px;
 
-  opacity:0;
+  opacity:1;
   color: ivory;
-  display: flex;
+  display: none;
   align-items:center;
-
   padding-left: 10px;
   padding-right: 10px;
-  /* justify-content: center; */
   white-space: nowrap;
-  /* border-bottom: 2px solid ivory; */
   transition-duration: 250ms;
+  text-decoration: none;
 }
 
 /* реакция текста в выпадающем списке на мышь */
-.expanded_list div:hover{
+.navbar_link:hover{
   color:rgb(20, 107, 183);
   background-color: rgba(44, 44, 39, 0.97);
 
