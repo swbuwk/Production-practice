@@ -76,30 +76,44 @@ $(document).ready(function () {
 const webinars = document.querySelector(".webinar-list")
 const webinarsCount = webinars.childElementCount
 let webinarsLeft = 0
-
+let startX
 
 const scroll_left = document.querySelector("#scroll-left")
 const scroll_right = document.querySelector("#scroll-right")
 
-scroll_right.onclick = () => {
-  if (webinarsLeft>-webinarsCount+1) {
-    webinarsLeft--
+function scrollWebinar(choice) {
+  if (choice==="right") {
+    if (webinarsLeft>-webinarsCount+1) {
+          webinarsLeft--
+        } else {
+          webinarsLeft=0
+    }
   } else {
-    webinarsLeft=0
+    if (webinarsLeft<0) {
+      webinarsLeft++
+    } else {
+      webinarsLeft=-webinarsCount+1
+    }    
   }
 
   webinars.style.left = `${webinarsLeft*100}%`
 
+}
 
+scroll_right.onclick = () => {
+  scrollWebinar("right")
 }
 
 scroll_left.onclick = () => {
-  if (webinarsLeft<0) {
-    webinarsLeft++
-  } else {
-    webinarsLeft=-webinarsCount+1
-  }
-
-  webinars.style.left = `${webinarsLeft*100}%`
+  scrollWebinar("left")
 }
 
+webinars.onmousedown = (e) => {
+  startX = e.screenX
+}
+
+webinars.onmouseup = (e) => {
+  if (startX < e.screenX - 100)scrollWebinar("left")
+  if (startX > e.screenX + 100)scrollWebinar("right")
+  startX = e.screenX
+}
