@@ -16,7 +16,7 @@
 
 body{
     width:100%;
-    height:500vh;
+    height:fit-content;
     margin:0px;
     overflow-x: hidden;
     display: flex;
@@ -147,10 +147,14 @@ header img{
 /* выпадающий из навбара список */
 .options_expanding:hover .expanded_list{
   opacity: 1;
-  height: 200px;
+  height:fit-content;
+  width:fit-content;
+
 }
 .options_expanding:hover .expanded_list div{
   height: 50px;
+  width:100%;
+  opacity: 1;
 }
 
 /* выпадающий список для пунктов навбара */
@@ -167,23 +171,24 @@ header img{
   list-style-type: none;
 }
 
+
+
 /* стиль элементов выпадающего списка */
 .expanded_list div{
-  width:100%;
+  width:0;
   height:0px;
+
+  opacity:0;
   color: ivory;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items:center;
+
+  padding-left: 10px;
+  padding-right: 10px;
+  /* justify-content: center; */
   white-space: nowrap;
   /* border-bottom: 2px solid ivory; */
   transition-duration: 250ms;
-  margin: 0 20px;
-}
-
-/* убираем разделитель в конце выпадающего списка */
-.expanded_list div:last-child{
-  border-bottom: none;
 }
 
 /* реакция текста в выпадающем списке на мышь */
@@ -243,6 +248,7 @@ header span{
   width:85vw;
 
   margin-top: 20px;
+  margin-bottom: 50px;
   
   display: grid;
   grid-template-columns: 1fr 1fr;
