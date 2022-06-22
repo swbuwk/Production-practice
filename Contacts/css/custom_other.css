@@ -76,6 +76,11 @@ body {
   transition: .2s;
 }
 
+.btn-switch:hover {
+  background: #40a4dd;
+  color: #fff;
+}
+
 .btn-call__active {
   background: #40a4dd;
   color: #fff;
