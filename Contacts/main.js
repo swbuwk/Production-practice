@@ -7,38 +7,27 @@ let btn_message = document.querySelector('#btn-message')
 let call = document.querySelector('#call')
 let message = document.querySelector('#message')
 
-btn_call.style.background = '#40a4dd'
-btn_call.style.color = '#fff'
-message.style.display = 'none'
-
-
 btn_call.onclick = () => {
+  btn_call.classList.add('btn-call__active')
+  btn_message.classList.remove('btn-message__active')
   call.style.display = 'flex'
   message.style.display = 'none'
-  btn_call.style.background = '#40a4dd'
-  btn_call.style.color = '#fff'
-  btn_message.style.background = '#fff'
-  btn_message.style.color = '#1d465d'
   setTimeout(() => {
-    message.style.opacity = '0';
-    call.style.opacity = '1';
-  },200)
+    message.style.opacity = '0'
+    call.style.opacity = '1'
+  }, 200)
 }
 
 btn_message.onclick = () => {
+  btn_call.classList.remove('btn-call__active')
+  btn_message.classList.add('btn-message__active')
   call.style.display = 'none'
   message.style.display = 'flex'
-  btn_call.style.background = '#fff'
-  btn_call.style.color = '#1d465d'
-  btn_message.style.background = '#40a4dd'
-  btn_message.style.color = '#fff'
   setTimeout(() => {
-    message.style.opacity = '1';
-    call.style.opacity = '0';
-  },200)
+    message.style.opacity = '1'
+    call.style.opacity = '0'
+  }, 200)
 }
-
-
 
 
 // PHONE MASK

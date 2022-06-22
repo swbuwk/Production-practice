@@ -76,6 +76,16 @@ body {
   transition: .2s;
 }
 
+.btn-call__active {
+  background: #40a4dd;
+  color: #fff;
+}
+
+.btn-message__active {
+  background: #40a4dd;
+  color: #fff;
+}
+
 .form {
   display: flex;
   flex-direction: column;
