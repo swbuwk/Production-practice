@@ -1,0 +1,15 @@
+@media (min-width: 768px) {
+  .title{
+    padding-left: 50px;
+    font-size: 20px;
+  }
+  .options_list{
+    display: none;
+  }
+  .burger{
+    display: flex;
+  }
+  .navbar{
+    justify-content: space-between;
+  }
+}
