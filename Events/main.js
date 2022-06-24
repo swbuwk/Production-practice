@@ -6,6 +6,7 @@ let exp_list=document.querySelector(".expanded_list")
 let phone_options_list=document.querySelectorAll(".phone_options_expanding")
 let burger=document.querySelector(".burger")
 let phone_navbar=document.querySelector(".phone_navbar")
+let cross=document.querySelector(".cross")
 
 console.log(header)
 
@@ -35,5 +36,8 @@ phone_options_list.forEach(element => {
 })
 
 burger.onclick=function(event){
+    phone_navbar.classList.toggle("invisible")
+}
+cross.onclick=function(event){
     phone_navbar.classList.toggle("invisible")
 }

@@ -199,7 +199,9 @@ header img{
   height: 100%;
   display: flex;
   align-items: center;
-  text-align: center;
+  text-align: center; 
+  text-decoration: none;
+  color: white;
 }
 
 /* реакция текста в навбаре на мышь */
@@ -286,6 +288,12 @@ header img{
   transform: translateY(-5px) scaleY(0.7) rotateZ(90deg);
 }
 
+.phone_options_noexp{
+  font-size: 24px;
+  color: black;
+  text-decoration: none;
+}
+
 .burger{
   width:35px;
   height: 30px;
@@ -300,6 +308,36 @@ header img{
   width:100%;
   height:4px;
   background-color: white;
+}
+
+.cross{
+  width:35px;
+  height: 35px;
+  display: flex;
+  position: fixed;
+  right:20px;
+  top: 20px;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+}
+
+.cross_line1{
+  position: absolute;
+  display: flex;
+  width: 35px;
+  height:4px;
+  background-color: black;
+  transform: rotateZ(-45deg);
+}
+
+.cross_line2{
+  position: absolute;
+  display: flex;
+  width: 35px;
+  height:4px;
+  background-color: black;
+  transform: rotateZ(45deg);
 }
 
 .invisible{
