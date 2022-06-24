@@ -1,3 +1,81 @@
 @media (min-width: 576px) {
+
+  /* SECTION__ABOUT */
   
+  .about__container {
+    max-width: 85%;
+  }
+
+  .about__title__inner {
+    justify-content: space-between;
+  }
+
+  .about__menu {
+    flex-direction: row;
+    margin: 0;
+  }
+
+  .about__menu li {
+    margin: 0 20px;
+    width: 50%;
+}
+
+  .about__menu__elem {
+    font-size: 16px;
+    margin: 0;
+  }
+
+  .about__card__inner {
+    height: auto;
+  }
+
+  .about__card {
+    flex-direction: column;
+  }
+
+  .about__card__img {
+    width: 100%;
+  }
+
+  .about__card__info {
+    width: 100%;
+    padding: 0;
+  }
+
+  
+  .about__card__info__title {
+    width: 90%;
+    font-size: 25px;
+    margin: 20px auto 0;
+  }
+
+  .about__card__info p {
+    width: 90%;
+    font-size: 16px;
+    margin: 20px auto;
+  }
+
+  .about__btn {
+    width: 220px;
+    margin: 20px auto;
+  }
+
+  /* SECTION__SOLUTIONS */
+
+  .solutions__title {
+    text-align: center;
+  }
+
+  .solutions__card__all__inner {
+    height: auto;
+  }
+
+  .solutions__card__inner {
+    max-width: 100%;
+    margin-bottom: 15px;
+  } 
+
+  .solutions__subtitle__inner {
+    font-size: 14px;
+  }
 }

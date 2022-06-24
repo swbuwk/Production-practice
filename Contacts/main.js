@@ -47,9 +47,10 @@ input_phones.forEach(phone => {
 ymaps.ready(initMap)
 
 function initMap () {
+  let zoomMap = 16;
   var myMap = new ymaps.Map("map", {
     center: [59.96791165733911, 30.31445309868539],
-    zoom: 16,
+    zoom: scaleMap(zoomMap),
     controls: []
   })
 
@@ -69,4 +70,15 @@ function initMap () {
   myMap.behaviors.disable('scrollZoom')
   myMap.geoObjects.add(markCompany)
   myMap.geoObjects.add(markSubway)
+}
+
+function scaleMap (scale) {
+  let width = document.body.clientWidth;
+  if (width >= 320 && width <= 576) {
+    scale = 14.7;
+  }
+  if (width >= 576 && width <= 768) {
+    scale = 15.5
+  }
+  return scale;
 }

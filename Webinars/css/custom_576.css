@@ -1,0 +1,11 @@
+@media (min-width: 576px) {
+    .webinar-signup-header img {
+        height: auto;
+        width: 100%;
+        top: 0;
+    }
+
+    .webinar-main-title {
+        font-size: 30px;
+    }
+}

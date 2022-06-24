@@ -4,7 +4,6 @@ let navbar=document.querySelector(".navbar")
 let client_height=document.documentElement.clientHeight
 let exp_list=document.querySelector(".expanded_list")
 
-console.log(header)
 
 document.body.onwheel=function(event){
 
@@ -22,7 +21,6 @@ document.body.onwheel=function(event){
     else {
         navbar.style.top="0"
     }
-    console.log(event)
 }
 
 
@@ -56,21 +54,6 @@ achievements_btn.onclick = () => {
   achievements.style.display = 'flex';
   },200)
 }
-
-// SECTION SOLUTIONS 
-
-$(document).ready(function () {
-
-  $('.solutions__card__inner').mouseleave(function () { 
-    this.style.marginTop = ''
-    this.style.boxShadow = ''
-  });
-
-  $('.solutions__card__inner').mouseenter(function () { 
-    this.style.marginTop = '20px'
-    this.style.boxShadow = '0px 0px 40px 0px #40a4dd'
-  });
-});
 
 // WEBINARS scroll
 const webinars = document.querySelector(".webinar-list")
