@@ -1,0 +1,53 @@
+@media (min-width: 320px) {
+  .webinar-signup-header img {
+    height: 150%;
+    width: auto;
+    top: 0;
+  }
+
+  .webinar-signup-title {
+    font-size: 24px;
+    padding: 15px 50px;
+  }
+
+  .webinar-signup-main {
+    flex-direction: column;
+    margin: 50px 0;
+  }
+
+  .webinar-bg {
+    display: none;
+  }
+
+  .webinar-main-container {
+    width: 90%;
+  }
+
+  .webinar-main-title {
+    font-size: 22px;
+  }
+
+  .webinar-form {
+    width: 80%;
+  }
+
+  .webinar-input {
+    font-size: 20px;
+  }
+
+  .webinar-input input {
+    font-size: 16px;
+  }
+
+  .webinar-form h3 {
+    font-size: 16px;
+  }
+
+  .webinar-checkbox {
+    font-size: 14px;
+  }
+
+  .webinar-form-submit {
+    font-size: 20px;
+  }
+}

@@ -4,7 +4,6 @@ let navbar=document.querySelector(".navbar")
 let client_height=document.documentElement.clientHeight
 let exp_list=document.querySelector(".expanded_list")
 
-console.log(header)
 
 document.body.onwheel=function(event){
 
@@ -22,7 +21,6 @@ document.body.onwheel=function(event){
     else {
         navbar.style.top="0"
     }
-    console.log(event)
 }
 
 

@@ -4,41 +4,90 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <title>Запись на вебинар</title>
 </head>
 <body>
     <header class="webinar-signup-header">
         <img src="./img/header.jpg" alt="">
-        <h1 class="signup-title">Вебинары</h1>
+        <h1 class="webinar-signup-title">Вебинары</h1>
     </header> 
     <main class="webinar-signup-main">
-        <h1 class="main-title">Запишитесь на вебинар</h1>
+        <div class="webinar-main-container">
+            <h1 class="webinar-main-title">Не упускайте возможность.<br>Запишитесь на вебинар.</h1>
+            <div class="webinar-bg">
+                <div class="webinar-bg-anim">
+                    <div class="webinar-animated"><img src="./img/Screenshot_1.png" alt="Вебинар"></div>
+                    <div class="webinar-animated"><img src="./img/Screenshot_2.png" alt="Вебинар"></div>
+                    <div class="webinar-animated"><img src="./img/Screenshot_3.png" alt="Вебинар"></div>
+                    <div class="webinar-animated"><img src="./img/Screenshot_4.png" alt="Вебинар"></div>
+                    <div class="webinar-animated"><img src="./img/Screenshot_1.png" alt="Вебинар"></div>
+                    <div class="webinar-animated"><img src="./img/Screenshot_2.png" alt="Вебинар"></div>
+                    <div class="webinar-animated"><img src="./img/Screenshot_3.png" alt="Вебинар"></div>
+                    <div class="webinar-animated"><img src="./img/Screenshot_4.png" alt="Вебинар"></div>
+                </div>
+            </div>
+        </div>
+        
         <form class="webinar-form" action="">
             <div class="webinar-input">
-                <label for="name">Ваше имя</label><br>
+                <label for="first_name">Ваше имя</label><br>
                 <input
-                    id="name"
+                    id="first_name"
+                    placeholder="Введите имя"
                     type="text">
             </div>
             <div class="webinar-input">
-                <label for="name">Фамилия</label><br>
+                <label for="last_name">Фамилия</label><br>
                 <input
-                    id="name"
+                    id="last_name"
+                    placeholder="Введите фамилио"
                     type="text">
             </div>
             <div class="webinar-input">
-                <label for="name">Организация</label><br>
+                <label for="organisation">Организация</label><br>
                 <input
-                    id="name"
+                    id="organisation"
+                    placeholder="Введите название организации"
                     type="text">
             </div>
             <div class="webinar-input">
-                <label for="name">Email</label><br>
+                <label for="email">Email</label><br>
                 <input
-                    id="name"
-                    type="text">
+                    id="email"
+                    placeholder="example@gmail.com"
+                    type="phone">
             </div>
+            <div class="webinar-input">
+                <label for="phone">Номер телефона</label><br>
+                <input
+                    id="phone"
+                    placeholder="+7 (XXX) XXX XX-XX"
+                    type="tel">
+            </div>
+            <h3>Какие программные продукты Вас интересуют?</h3>
+            <div class="webinar-checkbox">
+                <input
+                    id="webinar_checkbox_1"
+                    type="checkbox">
+                <label for="webinar_checkbox_1">1C:MES Оперативное управление производством</label>
+            </div>
+            <div class="webinar-checkbox">
+                <input
+                    id="webinar_checkbox_2"
+                    type="checkbox">
+                <label for="webinar_checkbox_2">1С:PDM Управление инженерными данными</label>
+            </div>
+            <br>
+            <div class="webinar-checkbox">
+                <input
+                    id="webinar_checkbox_3"
+                    type="checkbox">
+                <label for="webinar_checkbox_3">СМС оповещение о начале вебинара</label>
+            </div>
+
+            <button class="webinar-form-submit">Зарегистрироваться</button>
         </form>
     </main>
 </body>

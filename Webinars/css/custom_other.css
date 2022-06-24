@@ -24,10 +24,20 @@
 .webinar-signup-header img {
     position: absolute;
     top: -20vh;
+    height: auto;
     width: 100%;
-    object-fit: fill;
+    object-fit: cover;
     filter: brightness(0.3);
     z-index: -1;
+}
+
+.webinar-signup-title {
+  font-size: 41px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: white;
+  border: 4px double white;
+  padding: 15px 100px;
 }
 
 .webinar-signup-main {
@@ -84,15 +94,6 @@
 .webinar-animated img {
     height: 100%;
     width: 100%;
-}
-
-.webinar-signup-title {
-    font-size: 41px;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    color: white;
-    border: 4px double white;
-    padding: 15px 100px;
 }
 
 .webinar-main-title {
