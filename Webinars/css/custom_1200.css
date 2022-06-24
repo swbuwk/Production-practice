@@ -1,0 +1,20 @@
+@media (min-width: 1200px) {
+  .webinar-bg {
+    display: flex;
+
+  }
+
+  .webinar-signup-main {
+    flex-direction: row-reverse;
+    margin: 100px 0;
+  }
+
+  .webinar-main-container {
+    width: 50%;
+  }
+
+  .webinar-form {
+    width: 40%;
+  }
+
+}
