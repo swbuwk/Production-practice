@@ -8,8 +8,6 @@ let burger=document.querySelector(".burger")
 let phone_navbar=document.querySelector(".phone_navbar")
 let cross=document.querySelector(".cross")
 
-console.log(header)
-
 document.body.onwheel=function(event){
 
     if(window.scrollY>100){
@@ -26,7 +24,6 @@ document.body.onwheel=function(event){
     else {
         navbar.style.top="0"
     }
-    console.log(event)
 }
 
 phone_options_list.forEach(element => {

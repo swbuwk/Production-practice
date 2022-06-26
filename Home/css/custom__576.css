@@ -78,4 +78,40 @@
   .solutions__subtitle__inner {
     font-size: 14px;
   }
+
+  /* WEBINARS */
+
+  .webinars h1 {
+    font-size: 40px;
+  }
+
+  .webinar {
+    height: 500px;
+  }
+
+  .webinar-content {
+    width: 70%;
+  }
+
+  .webinar-title {
+    font-size: 30px;
+  }
+
+  .webinar-date {
+    font-size: 16px;
+  }
+
+  .webinar-desc {
+    margin-top: 25px;
+    font-size: 16px;
+  }
+
+  .webinar-link {
+    font-size: 24px;
+  }
+
+  /* CLIENTS */
+  .clients-title {
+    font-size: 36px;
+  }
 }

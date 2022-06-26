@@ -8,8 +8,21 @@
 
 * {
     font-family: "Raleway";
+}
+
+body, main *, header * {
     margin: 0;
     padding: 0;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+    background-color: #fff;
+}
+
+body::-webkit-scrollbar-thumb {
+    width: 5px;
+    background-color: rgb(0, 142, 190);
 }
 
 .webinar-signup-header {

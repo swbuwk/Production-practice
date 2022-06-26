@@ -1,5 +1,22 @@
 @media (min-width: 992px) {
 
+  /* HEADER */
+  .header_info_blocks {
+    display: flex;
+  }
+
+  .header_info_blocks div h1{
+    font-size: 20px;
+  }
+
+  .header_info_blocks div h2{
+    font-size: 18px;
+  }
+
+  .header_branch {
+    flex-direction: row;
+  }
+
   /* SECTION__ABOUT */
 
   .about__container {
@@ -64,5 +81,43 @@
   .about__btn {
     width: 220px;
     margin: 20px auto;
+  }
+
+   /* WEBINAR */
+   .webinar {
+    height: 700px;
+  }
+
+  .webinar-content {
+    width: 60%;
+  }
+
+  .webinar-title {
+    font-size: 40px;
+  }
+
+  .webinar-date {
+    font-size: 20px;
+  }
+
+  .webinar-desc {
+    margin-top: 60px;
+    font-size: 22px;
+  }
+
+  .webinar-link {
+    font-size: 36px;
+  }
+
+  .webinars-scroll {
+    top: 350px;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+  }
+
+  /* CLIENTS */
+  .clients-title {
+    font-size: 40px;
   }
 }

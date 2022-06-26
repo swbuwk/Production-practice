@@ -5,3 +5,5 @@
 @import url('custom__992.css');
 @import url('custom__1200.css');
 @import url('custom__1400.css');
+@import url('./navbar/navbar_style.css');
+@import url('./footer/footer_style.css');

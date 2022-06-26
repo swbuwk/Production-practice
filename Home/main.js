@@ -3,17 +3,20 @@ let header=document.querySelector("header")
 let navbar=document.querySelector(".navbar")
 let client_height=document.documentElement.clientHeight
 let exp_list=document.querySelector(".expanded_list")
-
+let phone_options_list=document.querySelectorAll(".phone_options_expanding")
+let burger=document.querySelector(".burger")
+let phone_navbar=document.querySelector(".phone_navbar")
+let cross=document.querySelector(".cross")
 
 document.body.onwheel=function(event){
 
-    if(window.scrollY>50){
+    if(window.scrollY>100){
         navbar.style.backgroundColor="rgba(54, 53, 49,1)"
-        // exp_list.style.backgroundColor="rgba(54, 53, 49,1)"
+        
     }
     else{
         navbar.style.backgroundColor="rgba(54,53,49,0.5)"
-        // exp_list.style.backgroundColor="rgba(54,53,49,0.5)"
+        
     }
     if(event.deltaY>0 && window.scrollY>100){
         navbar.style.top="-63px"
@@ -23,6 +26,18 @@ document.body.onwheel=function(event){
     }
 }
 
+phone_options_list.forEach(element => {
+    element.onclick=function(event){
+        element.children[1].children[0].classList.toggle("invisible")
+    }
+})
+
+burger.onclick=function(event){
+    phone_navbar.classList.toggle("invisible")
+}
+cross.onclick=function(event){
+    phone_navbar.classList.toggle("invisible")
+}
 
 // SECTION ABOUT US
 let history_btn = document.querySelector('#history-btn')
@@ -98,5 +113,15 @@ webinars.onmousedown = (e) => {
 webinars.onmouseup = (e) => {
   if (startX < e.screenX - 100)scrollWebinar("left")
   if (startX > e.screenX + 100)scrollWebinar("right")
+  startX = e.screenX
+}
+
+webinars.ontouchstart = (e) => {
+  startX = e.screenX
+}
+
+webinars.ontouchend = (e) => {
+  if (startX < e.screenX - 50)scrollWebinar("left")
+  if (startX > e.screenX + 50)scrollWebinar("right")
   startX = e.screenX
 }

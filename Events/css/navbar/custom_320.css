@@ -1,0 +1,25 @@
+@media (min-width: 320px) {
+  .title{
+    padding-left: 50px;
+    font-size: 20px;
+  }
+  .navbar{
+    justify-content: space-between;
+  }
+  .options_list{
+    display: none;
+  }
+  .burger{
+    display: flex;
+  }
+  .phone_options_text{
+    font-size: 14px;
+  }
+  .phone_options_noexp{
+    font-size: 14px;
+  }
+  .phone_navbar_link{
+    font-size: 10px;
+    font-weight: bolder;
+  }
+}

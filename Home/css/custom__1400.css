@@ -68,4 +68,9 @@
     width: 220px;
     margin: 20px auto;
   }
+
+  /* WEBINAR */
+  .webinar-content {
+    width: 40%;
+  }
 }

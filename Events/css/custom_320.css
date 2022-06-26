@@ -1,23 +1,11 @@
 @media (min-width: 320px) {
-  .title{
-    padding-left: 50px;
-    font-size: 20px;
-  }
-  .options_list{
-    display: none;
-  }
-  .burger{
-    display: flex;
-  }
-  .navbar{
-    justify-content: space-between;
-  }
   .news_block button{
     font-size: 14px;
-    padding:13px;
+    width: 150px;
+    padding:12px;
   }
   .news_content span{
-    font-size:15px;
+    font-size:12px;
   }
   .news_content h1{
     font-size: 17.5px;
@@ -29,15 +17,5 @@
   .all_news_block{
     display: flex;
     flex-direction: column;
-  }
-  .phone_options_text{
-    font-size: 14px;
-  }
-  .phone_options_noexp{
-    font-size: 14px;
-  }
-  .phone_navbar_link{
-    font-size: 10px;
-    font-weight: bolder;
   }
 }
