@@ -50,7 +50,7 @@
 /* позиционирование для выпадающих списков */
 .expanded_start{
   position: relative;
-  margin-left:-5px
+  margin-left:-10px
 }
 
 /* выпадающий из навбара список */
