@@ -1,15 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 
-body {
-  margin: 0;
-  padding: 0;
-}
 
 * {
   font-family: 'Raleway';
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+  background-color: #fff;
+}
+
+body::-webkit-scrollbar-thumb {
+  width: 5px;
+  background-color: rgb(0, 142, 190);
+}
+
 /* HEADER */
+
+.contact__header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+  overflow: hidden;
+}
+
+.contact__header img {
+  position: absolute;
+  top: -20vh;
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(0.3);
+  z-index: -1;
+}
+
+.contact__header__title {
+  font-size: 41px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: white;
+  border: 4px double white;
+  padding: 15px 100px;
+}
 
 /* SECTION CONTACT */
 

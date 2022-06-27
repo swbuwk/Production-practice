@@ -40,7 +40,8 @@
   padding-right: 10px;
   transition-duration: 200ms;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 14px;
+
 }
 
 .options_list li:hover{

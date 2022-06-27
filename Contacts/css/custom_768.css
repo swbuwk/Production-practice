@@ -1,4 +1,9 @@
 @media (min-width: 768px) {
+  .contact__header__title {
+    font-size: 41px;
+    padding: 15px 100px;
+  }
+
   .contact__container {
     max-width: 90%;
   }

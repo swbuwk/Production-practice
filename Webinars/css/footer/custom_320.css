@@ -20,16 +20,16 @@
         max-width: 33%;
         font-size:12px;
         padding-top: 0;
-        padding-left: 5px;
+        padding-left: 0;
         text-indent: 0;
     }
     .opt_first a{
         font-size: 8px;
-        padding-left: 5px;
+        padding-left: 0;
     }
     .opt_second{
             max-width: 30%;
-            padding-left: 5px;
+            padding-left: 0;
             padding-top: 0;
             padding-right: 5px;
             line-height: 0.6;
@@ -38,16 +38,16 @@
             max-width: 30%;
             font-size:12px;
             padding-top: 0;
-            padding-left: 5px;
+            padding-left: 0;
             margin: 0;
         }
         .opt_second a{
             font-size: 8px;
-            padding-left: 5px;
+            padding-left: 0;
         }
         .opt_third{
             max-width: 33%;
-            padding-left: 5px;
+            padding-left: 0;
             padding-top: 0;
             
             line-height: 0.6;
@@ -56,12 +56,12 @@
             max-width: 33%;
             font-size:12px;
             padding-top: 0;
-            padding-left: 5px;
+            padding-left: 0;
             padding-right: 5px;
         }
         .opt_third a{
             font-size: 8px;
-            padding-left: 5px;
+            padding-left: 0;
         }
         .text__first{
             padding-left: 10px;
@@ -75,7 +75,7 @@
         }
         .text__first a{
             font-size: 8px;
-            padding-left: 5px;
+            padding-left: 0;
         }
         .text__second{
             padding-left: 20px;

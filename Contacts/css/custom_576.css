@@ -1,4 +1,10 @@
 @media (min-width: 576px) {
+  .contact__header img {
+    height: auto;
+    width: 100%;
+    top: 0;
+  } 
+
   .contact__container {
     max-width: 90%;
   }
